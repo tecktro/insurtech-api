@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "06044ea2-14ed-4fbb-9277-57b5c9dc9be2",
+		"name": "insurtechAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "quoteCar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brand\": \"Chevrolet\",\r\n    \"year\": 2006,\r\n    \"hasAC\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/quoteCar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"quoteCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bestOptionPerYear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2020\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bestOptionPerYear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bestOptionPerYear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
